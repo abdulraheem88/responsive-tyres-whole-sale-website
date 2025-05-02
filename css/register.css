@@ -1,0 +1,114 @@
+
+/* Header/Navbar Styles */
+.navbar1 {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo */
+  .brand-logo {
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .brand-logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-left: auto;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-links li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  
+  .nav-links li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: red;
+  }
+  
+  /* Search Icon */
+  .search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-left: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar1 {
+      flex-wrap: nowrap;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      background-color: #333;
+      margin-top: 1rem;
+      padding: 1rem 0;
+      position: absolute;
+      top: 80px;
+      left: 0;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+    }
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  
+    .brand-logo {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
