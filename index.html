@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar1">
+      <div class="brand-logo">
+        <img src="assets/logo.png" alt="TiresBrand" class="logo" />
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="LoginUser.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="#" class="search-icon">&#128269;</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="login-section">
+    <div class="background-img">
+      <div class="login-form-container">
+        <form class="login-form">
+          <h2>Login</h2>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox-container">
+            <input type="checkbox" id="keep-logged-in" />
+            <label for="keep-logged-in">Keep me logged in</label>
+          </div>
+          <button type="submit">Login</button>
+          <div class="login-options">
+            <a href="#">Forgot password?</a>
+            <a href="#">Request new account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  
+<footer>
+  <div class="footer-content">
+    
+    <div class="contact-info">
+      <h1>Contact Us</h1>
+      <h2><span>Location:</span> 123 Tire Street</h2>
+      <h2><span>Email:</span> support@tiresbrand.com</h2>
+      <h2><span>Phone:</span> +123 456 7890</h2>
+    </div>
+
+    <div class="subscribe-section">
+      <h2>Subscribe</h2>
+      <p>Stay updated with our inventory</p>
+      <div class="subscribe-input">
+        <input type="email" placeholder="Enter email" />
+        <button>&rarr;</button>
+      </div>
+    </div>
+
+    <div class="recent-products">
+      <h2>Recent Products</h2>
+      <div class="product-grid">
+        <!-- Replace src with actual image paths -->
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+      </div>
+    </div>
+
+    <div class="social-media">
+      <h2>Follow Us</h2>
+      <div class="icons">
+        <a href="#" class="logo-link">
+          <img src="assets/facebook.png" alt="Facebook" />
+        </a>
+        <a href="#" class="logo-link">
+          <img src="assets/instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" class="logo-link">
+          <img src="assets/maps.png" alt="Google Maps" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copyright-line">
+    <span style="color: gray;">
+      Copyright 2025 | All rights reserved |
+    </span>
+    <span style="color: red; margin-left: 5px;">
+      tirewholesale.ca Abdul-Raheem
+    </span>
+  </div>
+</footer>
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>
