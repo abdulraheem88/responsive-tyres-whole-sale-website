@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 90%; /* Container width set to 80% of screen */
+      height: auto; /* Height auto */
+      padding: 180px 20px; /* Increased padding on the sides */
+      margin: 0 auto; /* Centers the container */
+    }
+    .leftPanel {
+      flex: 1;
+      background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 20px;
+      margin-right: 5px; /* Reduced space between image and form */
+    }
+    .overlayContent {
+      background-color: rgba(0,0,0,0.5);
+      padding: 30px 20px;
+      text-align: center;
+      width: 100%;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .createButton {
+      background-color: red;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+    .rightPanel {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* Shadow only on right side */
+  border-right: 2px solid #ccc; /* Border on the right side */
+  z-index: 1;
+}
+
+    .form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .input {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 12px 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      width: calc(100% + 6px); /* Increased input field width */
+    }
+    .checkboxContainer {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .loginButton {
+      background-color: red;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .links {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .link {
+      color: #555;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    /* Media Queries for Mobile */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 0 20px; /* Less padding for mobile */
+      }
+      .leftPanel {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar1">
+      <div class="brand-logo">
+        <img src="assets/logo.png" alt="TiresBrand" class="logo" />
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="LoginUser.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="#" class="search-icon">&#128269;</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Left Image Panel -->
+    <div class="leftPanel">
+      <div class="overlayContent">
+        <h2 class="title">New to our website?</h2>
+        <p class="subtitle">Tirewholesale Inc</p>
+        <button class="createButton">CREATE AN ACCOUNT</button>
+      </div>
+    </div>
+
+    <!-- Right Login Form -->
+    <div class="rightPanel">
+      <h2 style="text-align: center; margin-bottom: 30px;">LOGIN</h2>
+      <form class="form">
+        <input type="email" placeholder="Email Address" class="input" required />
+        <input type="password" placeholder="Password" class="input" required />
+
+        <div class="checkboxContainer">
+          <input type="checkbox" id="keepLoggedIn" />
+          <label for="keepLoggedIn" style="margin-left: 8px;">Keep me logged in</label>
+        </div>
+
+        <button type="submit" class="loginButton">LOG IN</button>
+
+        <div class="links">
+          <a href="#" class="link">Forgot Password?</a>
+          <a href="#" class="link">Request a new account</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+    
+<footer>
+  <div class="footer-content">
+    
+    <div class="contact-info">
+      <h1>Contact Us</h1>
+      <h2><span>Location:</span> 123 Tire Street</h2>
+      <h2><span>Email:</span> support@tiresbrand.com</h2>
+      <h2><span>Phone:</span> +123 456 7890</h2>
+    </div>
+
+    <div class="subscribe-section">
+      <h2>Subscribe</h2>
+      <p>Stay updated with our inventory</p>
+      <div class="subscribe-input">
+        <input type="email" placeholder="Enter email" />
+        <button>&rarr;</button>
+      </div>
+    </div>
+
+    <div class="recent-products">
+      <h2>Recent Products</h2>
+      <div class="product-grid">
+        <!-- Replace src with actual image paths -->
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+        <img src="assets/t2.jpeg" alt="product" class="product-img" />
+      </div>
+    </div>
+
+    <div class="social-media">
+      <h2>Follow Us</h2>
+      <div class="icons">
+        <a href="#" class="logo-link">
+          <img src="assets/facebook.png" alt="Facebook" />
+        </a>
+        <a href="#" class="logo-link">
+          <img src="assets/instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" class="logo-link">
+          <img src="assets/maps.png" alt="Google Maps" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copyright-line">
+    <span style="color: gray;">
+      Copyright 2025 | All rights reserved |
+    </span>
+    <span style="color: red; margin-left: 5px;">
+      tirewholesale.ca Abdul-Raheem
+    </span>
+  </div>
+</footer>
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>

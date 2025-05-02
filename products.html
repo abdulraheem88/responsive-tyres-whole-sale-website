@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | TiresBrand</title>
+    <link rel="stylesheet" href="css/products.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar1">
+        <div class="brand-logo">
+          <img src="assets/logo.png" alt="TiresBrand" class="logo" />
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="LoginUser.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="#" class="search-icon">&#128269;</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- products unavailable section -->
+    <section
+      class="products-unavailable"
+      style="
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        padding: 40px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        "
+      >
+        <img src="assets/oops.png" alt="Oops" style="height: 80px" />
+        <h2 style="margin: 0; font-size: 32px">We're Sorry!</h2>
+      </div>
+
+      <p style="margin-top: 20px; font-size: 16px; color: #333">
+        Our products are currently unavailable. We apologize for the
+        inconvenience and are working hard to restock.
+      </p>
+
+      <p style="margin-top: 5px; font-size: 16px; color: #555">
+        Sorry for the inconvenience.
+      </p>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+          margin-top: 30px;
+        "
+      >
+        <img src="assets/sorry.png" alt="Sorry" style="height: 80px" />
+        <a
+          href="index1.html"
+          style="
+            display: inline-block;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+          "
+        >
+          &#8678; Go Back
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <h1>Contact Us</h1>
+          <h2><span>Location:</span> 123 Tire Street</h2>
+          <h2><span>Email:</span> support@tiresbrand.com</h2>
+          <h2><span>Phone:</span> +123 456 7890</h2>
+        </div>
+
+        <div class="subscribe-section">
+          <h2>Subscribe</h2>
+          <p>Stay updated with our inventory</p>
+          <div class="subscribe-input">
+            <input type="email" placeholder="Enter email" />
+            <button>&rarr;</button>
+          </div>
+        </div>
+
+        <div class="recent-products">
+          <h2>Recent Products</h2>
+          <div class="product-grid">
+            <!-- Replace src with actual image paths -->
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+            <img src="assets/t2.jpeg" alt="product" class="product-img" />
+          </div>
+        </div>
+
+        <div class="social-media">
+          <h2>Follow Us</h2>
+          <div class="icons">
+            <a href="#" class="logo-link">
+              <img src="assets/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" class="logo-link">
+              <img src="assets/instagram.png" alt="Instagram" />
+            </a>
+            <a href="#" class="logo-link">
+              <img src="assets/maps.png" alt="Google Maps" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-line">
+        <span style="color: gray">
+          Copyright 2025 | All rights reserved |
+        </span>
+        <span style="color: red; margin-left: 5px">
+          tirewholesale.ca Abdul-Raheem
+        </span>
+      </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
